@@ -1,0 +1,20 @@
+{
+  "name": "host-badminton-payos-backend",
+  "description": "Backend Firebase Cloud Functions xử lý thanh toán PayOS (VietQR) cho app Host Badminton",
+  "main": "index.js",
+  "engines": {
+    "node": "20"
+  },
+  "scripts": {
+    "deploy": "firebase deploy --only functions"
+  },
+  "dependencies": {
+    "@payos/node": "^1.0.6",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.1",
+    "firebase-functions": "^5.0.1",
+    "qrcode": "^1.5.3"
+  },
+  "private": true
+}
